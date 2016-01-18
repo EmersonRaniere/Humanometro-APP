@@ -1,0 +1,25 @@
+<resources>
+
+    <string name="app_name">Humanômetro</string>
+    <string name="menu_settings">Configurações</string>
+    <string name="menu_sobre">Sobre</string>
+    <string name="menu_exit">Exit</string>
+    <string name="menu_ultimas">Ultimas</string>
+    <string name="menu_diario">Diário</string>
+    <string name="tv_sobre_content">Esse aplicativo tem o intuito de lembrar as pessoas a fazer
+        boas ações diariamente. </string>
+    <string name="tv_sobre_content_dev">Desenvolvido por Emerson Raniere para a disciplina
+        de PDM.</string>
+    <string name="btn_sobre_obrigado">Obrigado!</string>
+    <string name="tv_add_data">Data:</string>
+    <string name="tv_add_acao">Ação:</string>
+    <string name="btn_add_salvar">Adicionar nova ação</string>
+    <string name="btn_add_cancelar">Cancelar</string>
+    <string name="tv_sobre">Sobre</string>
+    <string name="tv_ultimas">Ultimas adicionadas</string>
+    <string name="tv_add">Adicionar</string>
+    <string name="tv_diario">Seu diário</string>
+    <string name="tv_configuracoes">Configurações</string>
+    <string name="btn_notification">Ativar Notificações</string>
+    <string name="btn_cancel_notification">Cancelar Notificações</string>
+</resources>

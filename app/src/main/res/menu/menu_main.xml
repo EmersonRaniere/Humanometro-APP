@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.edu.ifpb.tsi.pdm.emersonraniere.Activities.MainActivity">
+
+    <item
+        android:id="@+id/action_menu_settings"
+        android:title="@string/menu_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/action_menu_ultimas"
+        android:title="@string/menu_ultimas"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/action_menu_diario"
+        android:title="@string/menu_diario"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/action_menu_sobre"
+        android:title="@string/menu_sobre"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/action_menu_exit"
+        android:title="@string/menu_exit"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+</menu>

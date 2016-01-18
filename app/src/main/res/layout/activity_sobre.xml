@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.edu.ifpb.tsi.pdm.emersonraniere.Activities.SobreActivity">
+
+    <include layout="@layout/app_bar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/tv_sobre"
+        android:layout_weight="0.2"
+        android:textSize="30dp"
+        android:text="@string/tv_sobre"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_sobre_content"
+        android:id="@+id/tv_sobre_content"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="0.75" />
+
+    <Button
+        android:id="@+id/btn_sobre_obrigado"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:text="@string/btn_sobre_obrigado"
+        android:gravity="center"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/tv_sobre_content_dev"
+        android:id="@+id/tv_sobre_content_dev"
+        android:gravity="bottom|center"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="30dp" />
+
+</LinearLayout>
