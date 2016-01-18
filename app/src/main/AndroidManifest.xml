@@ -13,6 +13,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="br.edu.ifpb.tsi.pdm.emersonraniere.Activities.MainActivity"
+            android:launchMode="singleInstance"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,11 +21,36 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="br.edu.ifpb.tsi.pdm.emersonraniere.Activities.SobreActivity" />
-        <activity android:name="br.edu.ifpb.tsi.pdm.emersonraniere.Activities.AddActivity" />
-        <activity android:name="br.edu.ifpb.tsi.pdm.emersonraniere.Activities.UltimasActivity" />
-        <activity android:name="br.edu.ifpb.tsi.pdm.emersonraniere.Activities.DiarioActivity" />
-        <activity android:name="br.edu.ifpb.tsi.pdm.emersonraniere.Activities.ConfiguracoesActivity" >
+        <activity android:name="br.edu.ifpb.tsi.pdm.emersonraniere.Activities.SobreActivity"
+            android:label="@string/tv_sobre"
+            android:parentActivityName="br.edu.ifpb.tsi.pdm.emersonraniere.Activities.MainActivity"
+            android:allowTaskReparenting="true"
+            android:launchMode="singleInstance"
+            />
+        <activity android:name="br.edu.ifpb.tsi.pdm.emersonraniere.Activities.AddActivity"
+            android:launchMode="singleInstance"
+            android:parentActivityName="br.edu.ifpb.tsi.pdm.emersonraniere.Activities.MainActivity"
+            android:allowTaskReparenting="true"
+            android:label="@string/tv_add"
+            />
+        <activity android:name="br.edu.ifpb.tsi.pdm.emersonraniere.Activities.UltimasActivity"
+            android:launchMode="singleInstance"
+            android:parentActivityName="br.edu.ifpb.tsi.pdm.emersonraniere.Activities.MainActivity"
+            android:allowTaskReparenting="true"
+            android:label="@string/tv_ultimas"
+            />
+        <activity android:name="br.edu.ifpb.tsi.pdm.emersonraniere.Activities.DiarioActivity"
+            android:launchMode="singleInstance"
+            android:parentActivityName="br.edu.ifpb.tsi.pdm.emersonraniere.Activities.MainActivity"
+            android:allowTaskReparenting="true"
+            android:label="@string/tv_diario"
+            />
+        <activity android:name="br.edu.ifpb.tsi.pdm.emersonraniere.Activities.ConfiguracoesActivity"
+            android:launchMode="singleInstance"
+            android:parentActivityName="br.edu.ifpb.tsi.pdm.emersonraniere.Activities.MainActivity"
+            android:allowTaskReparenting="true"
+            android:label="@string/tv_configuracoes"
+            >
         </activity>
 
         <receiver android:name="br.edu.ifpb.tsi.pdm.emersonraniere.AlarmManager.AlarmReciever"/>

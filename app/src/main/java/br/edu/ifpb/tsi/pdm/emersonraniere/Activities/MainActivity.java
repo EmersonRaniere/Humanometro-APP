@@ -24,13 +24,6 @@ public class MainActivity extends AppCompatActivity {
 
         this.fab = (FloatingActionButton) findViewById(R.id.fab);
         this.fab.setOnClickListener(new AddBotao());
-//        this.fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
 
     }
 
@@ -60,8 +53,11 @@ public class MainActivity extends AppCompatActivity {
             startActivity(it);
         }
         if (id == R.id.action_menu_exit){
+            Intent it = new Intent(Intent.ACTION_MAIN);
+            it.addCategory(Intent.CATEGORY_HOME);
+            it.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(it);
             Toast.makeText(this, "Obrigado", Toast.LENGTH_SHORT).show();
-            finish();
         }
 
         return super.onOptionsItemSelected(item);
@@ -76,5 +72,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
 
 }

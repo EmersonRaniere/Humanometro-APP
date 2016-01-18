@@ -6,13 +6,8 @@
     android:orientation="vertical"
     tools:context="br.edu.ifpb.tsi.pdm.emersonraniere.Activities.DiarioActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="@string/tv_diario"
-        android:id="@+id/tv_add"
-        android:gravity="center"
-        android:textSize="30sp" />
+    <include layout="@layout/app_bar" />
+
 
     <CalendarView
         android:layout_width="match_parent"
@@ -25,6 +20,5 @@
         android:layout_height="match_parent"
         android:id="@+id/lv_diario"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp" />
+        android:layout_margin="10dp" />
 </LinearLayout>

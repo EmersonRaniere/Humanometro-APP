@@ -6,20 +6,13 @@
     android:orientation="vertical"
     tools:context="br.edu.ifpb.tsi.pdm.emersonraniere.Activities.UltimasActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/tv_ultimas"
-        android:gravity="center"
-        android:textSize="30sp"
-        android:layout_weight="1"
-        android:id="@+id/tv_ultimas" />
+    <include layout="@layout/app_bar" />
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0.1">
+        android:layout_margin="10dp">
 
         <ListView
             android:layout_width="match_parent"

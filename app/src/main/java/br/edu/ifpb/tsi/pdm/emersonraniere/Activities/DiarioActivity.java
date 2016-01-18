@@ -5,6 +5,9 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -33,6 +36,9 @@ public class DiarioActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diario);
+        Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
 
         this.dao = new EventoDAO(this);
 
@@ -40,10 +46,47 @@ public class DiarioActivity extends AppCompatActivity {
         loadingListeners();
         initCalendar();
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.action_menu_settings){
+            Intent it = new Intent(this, ConfiguracoesActivity.class);
+            startActivity(it);
+        }
+        if (id == R.id.action_menu_ultimas){
+            Intent it = new Intent(this, UltimasActivity.class);
+            startActivity(it);
+        }
+        if (id == R.id.action_menu_diario){
+            Toast.makeText(this, "Você já esta nesta tela", Toast.LENGTH_SHORT).show();
+        }
+        if (id == R.id.action_menu_sobre){
+            Intent it = new Intent(this, SobreActivity.class);
+            startActivity(it);
+        }
+        if (id == R.id.action_menu_exit){
+            Intent it = new Intent(Intent.ACTION_MAIN);
+            it.addCategory(Intent.CATEGORY_HOME);
+            it.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(it);
+            Toast.makeText(this, "Obrigado", Toast.LENGTH_SHORT).show();
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
     public void loadingComponets(){
         this.lv_diario = (ListView) findViewById(R.id.lv_diario);
 
     }
+
     public void loadingListeners(){
         this.lv_diario.setOnItemLongClickListener(new onLongClickItemListView());
         this.lv_diario.setOnItemClickListener(new onClickItemListView());

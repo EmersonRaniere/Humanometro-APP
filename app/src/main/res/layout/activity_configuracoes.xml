@@ -6,20 +6,13 @@
     android:orientation="vertical"
     tools:context="br.edu.ifpb.tsi.pdm.emersonraniere.Activities.ConfiguracoesActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="@string/tv_configuracoes"
-        android:id="@+id/tv_configuracoes"
-        android:gravity="center"
-        android:textSize="30sp" />
+    <include layout="@layout/app_bar" />
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp">
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
 
         <Button
             android:layout_width="match_parent"
@@ -27,7 +20,8 @@
             android:text="@string/btn_notification"
             android:id="@+id/btn_settings_notification"
             android:gravity="center"
-            android:layout_weight="0.33" />
+            android:layout_weight="0.33"
+            android:layout_margin="10dp" />
 
         <Button
             android:layout_width="match_parent"
@@ -35,7 +29,8 @@
             android:text="@string/btn_cancel_notification"
             android:id="@+id/btn_settings_cancel_notification"
             android:gravity="center"
-            android:layout_weight="0.33" />
+            android:layout_weight="0.33"
+            android:layout_margin="10dp" />
     </LinearLayout>
 
 

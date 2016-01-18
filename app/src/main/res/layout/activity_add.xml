@@ -6,25 +6,14 @@
     android:orientation="vertical"
     tools:context="br.edu.ifpb.tsi.pdm.emersonraniere.Activities.AddActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="@string/tv_add"
-        android:id="@+id/tv_add"
-        android:gravity="center"
-        android:layout_weight="0.2"
-        android:textSize="30dp" />
-
+    <include layout="@layout/app_bar" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginBottom="20dp"
-        android:layout_weight="0.15">
+        android:layout_weight="0.15"
+        android:layout_margin="10dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -38,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/addPage_et_action"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="10dp"
             android:padding="5dp"
             android:background="@drawable/retangle_shape"
             android:inputType="textCapCharacters|textMultiLine"
@@ -57,8 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.25"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp">
+        android:layout_margin="10dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -74,7 +62,7 @@
             android:ems="10"
             android:id="@+id/addPage_et_date"
             android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="10dp"
             android:gravity="center"
             android:padding="5dp"
             android:focusable="false" />
@@ -85,9 +73,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
+        android:layout_margin="10dp"
         android:layout_weight="2">
         <Button
             android:layout_width="wrap_content"
